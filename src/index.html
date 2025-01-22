@@ -1,141 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPGE John Atanasoff</title>
+    <title>СПГЕ "Джон Атанасов"</title>
     <style>
+        /* Основни стилове */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+            color: #333;
         }
         header {
-            background-color: #004080;
+            background: #00509e;
             color: white;
-            padding: 10px 20px;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         nav {
-            background-color: #003366;
+            background: #003f7f;
             overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: white;
             text-decoration: none;
             padding: 14px 20px;
             display: inline-block;
+            transition: background 0.3s;
         }
         nav a:hover {
-            background-color: #0059b3;
+            background: #00509e;
         }
         .container {
             padding: 20px;
         }
+        .section-title {
+            margin-top: 20px;
+            text-align: center;
+            color: #00509e;
+        }
         .images {
             display: flex;
-            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
             margin: 20px 0;
         }
         .images img {
-            max-width: 100%;
+            max-width: 300px;
             height: auto;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         table, th, td {
             border: 1px solid #ddd;
         }
         th, td {
             text-align: center;
-            padding: 10px;
+            padding: 12px;
         }
         th {
-            background-color: #004080;
+            background: #00509e;
             color: white;
         }
+        td {
+            background: #f9f9f9;
+        }
         footer {
-            background-color: #003366;
+            background: #003f7f;
             color: white;
             text-align: center;
             padding: 10px;
             margin-top: 20px;
         }
+        /* Бутон */
+        .button {
+            display: inline-block;
+            background: #00509e;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #003f7f;
+        }
     </style>
+    <script>
+        function showMessage() {
+            alert("Добре дошли в сайта на СПГЕ 'Джон Атанасов'!");
+        }
+    </script>
 </head>
-<body>
+<body onload="showMessage()">
     <header>
-        <h1>SPGE "John Atanasoff"</h1>
+        <h1>СПГЕ "Джон Атанасов"</h1>
+        <p>Най-доброто техническо образование в България</p>
     </header>
     <nav>
-        <a href="#about">About</a>
-        <a href="#admission">Admission Table</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#about">За училището</a>
+        <a href="#admission">Точки за прием</a>
+        <a href="#gallery">Галерия</a>
+        <a href="#activities">Дейности</a>
+        <a href="#contacts">Контакти</a>
+        <a href="#news">Новини</a>
     </nav>
     <div class="container">
         <section id="about">
-            <h2>About SPGE "John Atanasoff"</h2>
+            <h2 class="section-title">За СПГЕ "Джон Атанасов"</h2>
             <p>
-                SPGE "John Atanasoff" is one of the leading technical schools in Bulgaria, named after the famous inventor and co-creator of the first electronic digital computer. 
-                The school is known for its excellent education in fields such as programming, electronics, and IT, preparing students for future careers in technology and engineering.
+                СПГЕ "Джон Атанасов" е водеща гимназия в областта на електрониката, информационните технологии и програмирането. Училището носи името на Джон Атанасов, изобретател на първия електронен цифров компютър.
             </p>
             <p>
-                With modern laboratories, experienced teachers, and partnerships with leading companies, SPGE "John Atanasoff" provides a high-quality education environment for its students. 
-                It has a rich tradition of success in national and international competitions, ensuring students receive the best preparation for their future careers.
+                Училището предлага модерни лаборатории, висококвалифицирани преподаватели и иновативна учебна програма, която подготвя учениците за успешна кариера в света на технологиите.
+            </p>
+            <p>
+                Освен академичното развитие, СПГЕ "Джон Атанасов" предлага различни програми за извънкласни дейности, които насърчават креативността и иновациите.
             </p>
         </section>
 
         <section id="gallery">
-            <h2>Gallery</h2>
+            <h2 class="section-title">Галерия</h2>
             <div class="images">
-                
-                <img src="https://spge-bg.com/_data/pages/home/gallery/Laboratories/P9280032.JPG" alt="Laboratories at SPGE">
-                
+                <img src="school1.jpg" alt="Сграда на СПГЕ">
+                <img src="school2.jpg" alt="Лаборатория на СПГЕ">
+                <img src="school3.jpg" alt="Ученици на СПГЕ">
+                <img src="school4.jpg" alt="Учители и ученици">
             </div>
         </section>
 
         <section id="admission">
-            <h2>Admission Points Required (2020-2024)</h2>
+            <h2 class="section-title">Таблица с точки за прием</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Year</th>
-                        <th>Minimum Points (out of 500)</th>
+                        <th>Година</th>
+                        <th>Минимален бал (от 500 точки)</th>
+                        <th>Среден бал</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>2020</td>
                         <td>400</td>
+                        <td>450</td>
                     </tr>
                     <tr>
                         <td>2021</td>
                         <td>410</td>
+                        <td>460</td>
                     </tr>
                     <tr>
                         <td>2022</td>
                         <td>420</td>
+                        <td>470</td>
                     </tr>
                     <tr>
                         <td>2023</td>
                         <td>430</td>
+                        <td>480</td>
                     </tr>
                     <tr>
                         <td>2024</td>
                         <td>440</td>
+                        <td>490</td>
                     </tr>
                 </tbody>
             </table>
+            <p>
+                <a class="button" href="#">Виж повече</a>
+            </p>
         </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 SPGE "John Atanasoff". All rights reserved.</p>
-    </footer>
-</body>
-</html>
+
+        <section id="activities">
+            <h2 class="section-title">Извънкласни дейности</h2>
+            <p>
+                В СПГЕ "Джон Атанасов" учениците могат да участват в различни извънкласни дейности като:
+            </p>
+            <ul>
+                <li>Клуб по програмиране</li>
+                <li>Роботика</li>
+                <li>Математически състезания</li>
+                <li>Екологични проекти</li>
+                <li>Хакатони</li>
+                <li>Спортни турнири</li>
+            </ul>
+        </section>
+
+        <section id="news">
+            <h2 class="section-title">Новини</h2>
+            <p>
+                Прочетете последните новини за училището, събития и успехи на учениците ни.
+            </p>
+            <ul>
+                <li><a href="#">Нов съвместен проект с IT компания</a></
+

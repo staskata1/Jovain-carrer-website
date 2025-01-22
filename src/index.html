@@ -484,3 +484,115 @@
         margin-top: 40px;
     }
 </style>
+
+        <section id="news">
+    <h1>Новини</h1>
+    <p>Бъдете в крак с последните събития и новини от СПГЕ "Джон Атанасов".</p>
+
+    <div class="news-grid">
+        <article class="news-item">
+            <h2>Училищен Хакатон</h2>
+            <p>Ученици от СПГЕ "Джон Атанасов" участваха в училищен хакатон, където представиха иновативни проекти.</p>
+            <a href="#" class="read-more">Прочети повече...</a>
+        </article>
+        <article class="news-item">
+            <h2>Посещение на технологичен парк</h2>
+            <p>Нашите ученици посетиха технологичния парк в София, където научиха повече за последните иновации.</p>
+            <a href="#" class="read-more">Прочети повече...</a>
+        </article>
+        <article class="news-item">
+            <h2>Национална олимпиада по информатика</h2>
+            <p>Ученик от СПГЕ "Джон Атанасов" спечели златен медал на Националната олимпиада по информатика.</p>
+            <a href="#" class="read-more">Прочети повече...</a>
+        </article>
+    </div>
+
+    <form id="submit-news">
+        <h2>Споделете новина</h2>
+        <label for="news-title">Заглавие:</label>
+        <input type="text" id="news-title" name="news-title" required>
+        <label for="news-content">Съдържание:</label>
+        <textarea id="news-content" name="news-content" rows="5" required></textarea>
+        <button type="submit">Изпрати</button>
+    </form>
+</section>
+
+<style>
+    #news {
+        margin: 20px 0;
+        padding: 20px;
+        background: #fffaf0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    #news h1 {
+        text-align: center;
+        color: #ff4500;
+        font-size: 1.8em;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+    .news-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .news-item {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+    .news-item:hover {
+        transform: scale(1.05);
+    }
+    .news-item h2 {
+        color: #ff4500;
+        font-size: 1.2em;
+    }
+    .read-more {
+        text-decoration: none;
+        color: #1e90ff;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    .read-more:hover {
+        color: #ff4500;
+    }
+    #submit-news {
+        margin-top: 40px;
+    }
+    #submit-news h2 {
+        text-align: center;
+        color: #ff4500;
+    }
+    #submit-news label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    #submit-news input, #submit-news textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    #submit-news button {
+        background: linear-gradient(45deg, #ff4500, #ff8c00);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+    }
+    #submit-news button:hover {
+        background: rgba(255, 69, 0, 0.8);
+    }
+</style>

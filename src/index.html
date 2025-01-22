@@ -10,30 +10,34 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+            background: linear-gradient(to bottom, #f0f8ff, #ffe4e1);
             color: #333;
         }
         header {
-            background: #00509e;
+            background: linear-gradient(45deg, #ff7f50, #1e90ff);
             color: white;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-bottom: 5px solid #ff4500;
         }
         nav {
-            background: #003f7f;
+            background: linear-gradient(to right, #ff4500, #ff8c00, #ffd700);
             overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         nav a {
             color: white;
+            font-weight: bold;
             text-decoration: none;
             padding: 14px 20px;
             display: inline-block;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.2s;
         }
         nav a:hover {
-            background: #00509e;
+            background: rgba(255, 69, 0, 0.8);
+            transform: scale(1.1);
+            border-radius: 5px;
         }
         .container {
             padding: 20px;
@@ -41,7 +45,9 @@
         .section-title {
             margin-top: 20px;
             text-align: center;
-            color: #00509e;
+            color: #ff4500;
+            font-size: 1.8em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
         .images {
             display: flex;
@@ -53,20 +59,20 @@
         .images img {
             max-width: 300px;
             height: auto;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 3px solid #ff7f50;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .images img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         table, th, td {
             border: 1px solid #ddd;
@@ -76,36 +82,43 @@
             padding: 12px;
         }
         th {
-            background: #00509e;
+            background: linear-gradient(to right, #ff4500, #ff8c00);
             color: white;
         }
         td {
-            background: #f9f9f9;
+            background: #fffaf0;
         }
         footer {
-            background: #003f7f;
+            background: linear-gradient(45deg, #1e90ff, #00fa9a);
             color: white;
             text-align: center;
             padding: 10px;
             margin-top: 20px;
+            border-top: 5px solid #ff4500;
         }
         /* Бутон */
         .button {
             display: inline-block;
-            background: #00509e;
+            background: linear-gradient(45deg, #ff4500, #ff8c00);
             color: white;
             padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
         }
         .button:hover {
-            background: #003f7f;
+            background: rgba(255, 69, 0, 0.8);
+            transform: scale(1.1);
+        }
+        .highlight {
+            color: #ff4500;
+            font-weight: bold;
         }
     </style>
     <script>
         function showMessage() {
-            alert("Добре дошли в сайта на СПГЕ 'Джон Атанасов'!");
+            alert("Добре дошли в сайта на СПГЕ 'Джон Атанасов'! Уникален дизайн, специално за вас.");
         }
     </script>
 </head>
@@ -126,13 +139,10 @@
         <section id="about">
             <h2 class="section-title">За СПГЕ "Джон Атанасов"</h2>
             <p>
-                СПГЕ "Джон Атанасов" е водеща гимназия в областта на електрониката, информационните технологии и програмирането. Училището носи името на Джон Атанасов, изобретател на първия електронен цифров компютър.
+                СПГЕ "Джон Атанасов" е водеща гимназия в областта на електрониката, информационните технологии и програмирането. Училището носи името на <span class="highlight">Джон Атанасов</span>, изобретател на първия електронен цифров компютър.
             </p>
             <p>
-                Училището предлага модерни лаборатории, висококвалифицирани преподаватели и иновативна учебна програма, която подготвя учениците за успешна кариера в света на технологиите.
-            </p>
-            <p>
-                Освен академичното развитие, СПГЕ "Джон Атанасов" предлага различни програми за извънкласни дейности, които насърчават креативността и иновациите.
+                Училището предлага <span class="highlight">модерни лаборатории</span>, висококвалифицирани преподаватели и иновативна учебна програма, която подготвя учениците за успешна кариера в света на технологиите.
             </p>
         </section>
 
@@ -192,23 +202,6 @@
         <section id="activities">
             <h2 class="section-title">Извънкласни дейности</h2>
             <p>
-                В СПГЕ "Джон Атанасов" учениците могат да участват в различни извънкласни дейности като:
-            </p>
-            <ul>
-                <li>Клуб по програмиране</li>
-                <li>Роботика</li>
-                <li>Математически състезания</li>
-                <li>Екологични проекти</li>
-                <li>Хакатони</li>
-                <li>Спортни турнири</li>
-            </ul>
-        </section>
+                В СПГЕ "Джон Атанасов" учениците могат да участват
 
-        <section id="news">
-            <h2 class="section-title">Новини</h2>
-            <p>
-                Прочетете последните новини за училището, събития и успехи на учениците ни.
-            </p>
-            <ul>
-                <li><a href="#">Нов съвместен проект с IT компания</a></
 
